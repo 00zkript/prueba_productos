@@ -1,6 +1,10 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
+import path from 'path';
+// import ssr from 'vite-plugin-ssr';
+
+
 
 export default defineConfig({
     plugins: [
@@ -9,7 +13,7 @@ export default defineConfig({
             refresh: true,
         }),
         vue(),
-        ssr()
+        // ssr()
     ],
     server: {
         host: 'localhost', // Asegúrate de que esté en localhost
